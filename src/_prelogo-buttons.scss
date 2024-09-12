@@ -1,0 +1,20 @@
+.pre-logo-btn{
+    @include button-m();    
+    background: transparent;
+    height: 40px;    
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    
+    &:nth-child(n+2){
+      border-left: 2px solid rgba(86, 75, 64, 0.9);
+    }
+
+    &:not(:last-child){
+      border-right: 2px solid rgb(3, 20, 29);
+    }
+
+    .icon {
+      @include button-icon();
+    }
+}

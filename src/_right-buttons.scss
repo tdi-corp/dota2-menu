@@ -1,0 +1,14 @@
+.right-btn {
+    @include button-m(); 
+    background: nth($main-buttons-background-list, 4);
+    box-shadow: map-get($shadows-map, 'main-btn');
+    height: $header_height;
+    transform: skew(-15deg);
+    padding: 0px 20px;
+
+    .icon {
+      @include button-icon();
+
+      transform: skew(15deg);
+    }
+}  

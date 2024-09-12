@@ -47,20 +47,16 @@ header .header .leftSideMenu .pre-logo-section .pre-logo-buttons {
   justify-content: left;
 }
 header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgb(144, 147, 151);
-  background: transparent;
-  height: 40px;
-  padding: 0px 15px;
+  cursor: pointer;
   border-radius: 0;
   border: 0;
   margin: 0;
-  cursor: pointer;
+  background: transparent;
+  height: 40px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
 }
 header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn:nth-child(n+2) {
   border-left: 2px solid rgba(86, 75, 64, 0.9);
@@ -119,17 +115,17 @@ header .header .leftSideMenu .logo-section .logo-section--second-layer {
 }
 header .header .leftSideMenu .main-buttons-section .main-btn {
   position: relative;
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgb(144, 147, 151);
-  height: 3.75rem;
-  padding: 0px 50px;
-  transform: skew(-15deg);
+  cursor: pointer;
   border-radius: 0;
   border: 0;
   margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(144, 147, 151);
   box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
-  cursor: pointer;
+  height: 3.75rem;
+  transform: skew(-15deg);
+  padding: 0px 50px;
 }
 header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(1) {
   background: linear-gradient(to top right, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
@@ -166,10 +162,48 @@ header .header .leftSideMenu .main-buttons-section .main-btn.active::before, hea
   opacity: 1;
   background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);
 }
-header .header .rightSideMenu .test-btn {
-  background: transparent;
+header .header .rightSideMenu {
+  display: flex;
+  justify-content: end;
+  gap: 0.2rem;
+}
+header .header .rightSideMenu .gold-info {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+header .header .rightSideMenu .gold-info .icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .rightSideMenu .gold-info .gold-currency {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e3d585;
+}
+header .header .rightSideMenu .right-btn {
+  position: relative;
+  cursor: pointer;
   border-radius: 0;
   border: 0;
+  margin: 0;
+  background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+  box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
+  height: 3.75rem;
+  transform: skew(-15deg);
+  padding: 0px 20px;
+}
+header .header .rightSideMenu .right-btn .icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(15deg);
 }
 
 main {

@@ -1,17 +1,13 @@
 .main-btn {
-    position: relative;
+    @include button-m(); 
     font-size: 1rem;
     font-weight: 500;
-    color: rgb(144, 147, 151);
-    height: $header_height;
-    padding: 0px 50px;
-    transform: skew(-15deg);
-    border-radius: 0;
-    border: 0;
-    margin: 0;
+    color: rgb(144, 147, 151);    
     box-shadow: map-get($shadows-map, 'main-btn');
-    cursor: pointer;   
-
+    height: $header_height;
+    transform: skew(-15deg);
+    padding: 0px 50px;
+    
     @for $i from 1 through length($main-buttons-background-list){
         &:nth-child(#{$i}){
             background: nth($main-buttons-background-list, $i);
@@ -33,8 +29,7 @@
         width: 110%;
         height: 110%;
         opacity: 0;
-        transition: 1s;
-        
+        transition: 1s;        
     }
     
     &.active {

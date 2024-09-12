@@ -33,15 +33,15 @@ const getHeroesPack = (iteration = 0, step = 20, max_parts = 5) => {
   }
   
 
-  // return heroes_data.slice(start, end).map((item, index) => {
-  //     const name = item.name.replace(/^npc_dota_hero_/,'');
+  return heroes_data.slice(start, end).map((item, index) => {
+      const name = item.name.replace(/^npc_dota_hero_/,'');
       
-  //     return `
-  //       <div class="heroes-item">
-  //         <img src="https://cdn.dota2.com/apps/dota2/images/heroes/${name}_vert.jpg" alt="">
-  //       </div>`
-  // })
-  // .join('');
+      return `
+        <div class="heroes-item">
+          <img src="https://cdn.dota2.com/apps/dota2/images/heroes/${name}_vert.jpg" alt="">
+        </div>`
+  })
+  .join('');
 
 }
 
