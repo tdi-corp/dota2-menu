@@ -40,7 +40,7 @@ header .header .leftSideMenu .pre-logo-section .pre-logo-shadow {
   left: 0;
   width: 120%;
   height: 100%;
-  background: linear-gradient(to top left, rgba(235, 145, 43, 0.11) 20%, rgba(255, 255, 255, 0) 50%), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+  background: linear-gradient(to top left, rgba(235, 145, 43, 0.11) 20%, rgba(255, 255, 255, 0) 50%), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
 }
 header .header .leftSideMenu .pre-logo-section .pre-logo-buttons {
   display: flex;
@@ -79,7 +79,7 @@ header .header .leftSideMenu .logo-section {
 header .header .leftSideMenu .logo-section .logo-section--image {
   position: absolute;
   left: 50%;
-  margin-left: -2.125rem;
+  margin-left: -1.8125rem;
   top: 0.5rem;
   z-index: 4;
 }
@@ -128,16 +128,16 @@ header .header .leftSideMenu .main-buttons-section .main-btn {
   padding: 0px 50px;
 }
 header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(1) {
-  background: linear-gradient(to top right, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+  background: linear-gradient(to top right, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
 }
 header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(2) {
-  background: linear-gradient(to top right, rgba(235, 145, 43, 0.048), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+  background: linear-gradient(to top right, rgba(235, 145, 43, 0.048), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
 }
 header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(3) {
-  background: linear-gradient(to top right, rgba(235, 145, 43, 0.025), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+  background: linear-gradient(to top right, rgba(235, 145, 43, 0.025), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
 }
 header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(4) {
-  background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+  background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
 }
 header .header .leftSideMenu .main-buttons-section .main-btn .text {
   transform: skew(15deg);
@@ -191,7 +191,7 @@ header .header .rightSideMenu .right-btn {
   border-radius: 0;
   border: 0;
   margin: 0;
-  background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+  background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
   box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
   height: 3.75rem;
   transform: skew(-15deg);
