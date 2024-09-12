@@ -1,4 +1,4 @@
-import heroes_data from '/assets/heroes.js'
+import heroes_data from '/heroes.js'
 
 const heroes_list = document.querySelector('#heroes')
 
