@@ -1,0 +1,223 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  background: linear-gradient(#0b1113, #2b3740, #10161d);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 3.75rem;
+}
+header .header {
+  display: flex;
+  flex-direction: row;
+  background-color: #1c2028;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .header .leftSideMenu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.2rem;
+  height: 3.75rem;
+}
+header .header .leftSideMenu .pre-logo-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .header .leftSideMenu .pre-logo-section .pre-logo-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(to top left, rgba(235, 145, 43, 0.11) 20%, rgba(255, 255, 255, 0) 50%), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+}
+header .header .leftSideMenu .pre-logo-section .pre-logo-buttons {
+  display: flex;
+  justify-content: left;
+}
+header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(144, 147, 151);
+  background: transparent;
+  height: 40px;
+  padding: 0px 15px;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+}
+header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn:nth-child(n+2) {
+  border-left: 2px solid rgba(86, 75, 64, 0.9);
+}
+header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn:not(:last-child) {
+  border-right: 2px solid rgb(3, 20, 29);
+}
+header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn .icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .leftSideMenu .logo-section {
+  position: relative;
+  width: 12.5rem;
+  height: 60px;
+}
+header .header .leftSideMenu .logo-section .logo-section--image {
+  position: absolute;
+  left: 50%;
+  margin-left: -29px;
+  top: 0.5rem;
+  z-index: 4;
+}
+header .header .leftSideMenu .logo-section .logo-section--forward-layer {
+  position: absolute;
+  left: 50%;
+  margin-left: -5rem;
+  z-index: 3;
+  width: 10rem;
+  height: 80px;
+  background-color: #191d24;
+  box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555);
+  transform: perspective(10px) rotateX(-0.6deg);
+  overflow: hidden;
+}
+header .header .leftSideMenu .logo-section .logo-section--forward-layer .logo_shadow {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 12.5rem;
+  height: 80px;
+  display: block;
+  background: linear-gradient(to top, rgba(235, 145, 43, 0.164), rgba(255, 255, 255, 0));
+}
+header .header .leftSideMenu .logo-section .logo-section--second-layer {
+  position: absolute;
+  z-index: 2;
+  height: 70px;
+  width: 12.5rem;
+  background: linear-gradient(to top, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), #1c2028;
+  box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555);
+  transform: perspective(10px) rotateX(-1.8deg);
+}
+header .header .leftSideMenu .main-buttons-section .main-btn {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(144, 147, 151);
+  height: 3.75rem;
+  padding: 0px 50px;
+  transform: skew(-15deg);
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
+  cursor: pointer;
+}
+header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(1) {
+  background: linear-gradient(to top right, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+}
+header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(2) {
+  background: linear-gradient(to top right, rgba(235, 145, 43, 0.048), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+}
+header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(3) {
+  background: linear-gradient(to top right, rgba(235, 145, 43, 0.025), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+}
+header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(4) {
+  background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/assets/noise.svg");
+}
+header .header .leftSideMenu .main-buttons-section .main-btn .text {
+  transform: skew(15deg);
+  text-shadow: -1px -1px #000, 0 -1px 0 #757575;
+  text-transform: uppercase;
+  transition: 1s;
+}
+header .header .leftSideMenu .main-buttons-section .main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  opacity: 0;
+  transition: 1s;
+}
+header .header .leftSideMenu .main-buttons-section .main-btn.active, header .header .leftSideMenu .main-buttons-section .main-btn:hover {
+  color: rgb(170, 205, 241);
+}
+header .header .leftSideMenu .main-buttons-section .main-btn.active::before, header .header .leftSideMenu .main-buttons-section .main-btn:hover::before {
+  opacity: 1;
+  background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);
+}
+header .header .rightSideMenu .test-btn {
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+}
+
+main {
+  min-height: 50rem;
+}
+main .container {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+main .container .heroes-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .container .heroes-columns .heroes-column .heroes-pack h2 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #fff;
+}
+main .container .heroes-columns .heroes-column .heroes-pack .heroes-select {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+main .container .heroes-columns .heroes-column .heroes-pack .heroes-select .heroes-item {
+  width: 60px;
+  height: 100px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+main .container .heroes-columns .heroes-column .heroes-pack .heroes-select .heroes-item img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -43px;
+}
+main .container .heroes-columns .heroes-column .heroes-pack .heroes-select .heroes-item:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+footer {
+  min-height: 6.25rem;
+}
+
+/*# sourceMappingURL=main.css.map */

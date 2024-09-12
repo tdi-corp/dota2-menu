@@ -1,0 +1,289 @@
+$base_path: '/assets';
+
+$btn_color: #1c2028;
+
+$header_height: 3.75rem; // 60px
+
+$backgrounds-map: (
+  background-color: linear-gradient(#0b1113, #2b3740, #10161d),
+  
+  logo-background: linear-gradient(to top, rgba(235, 145, 43, 0.164), rgba(255, 255, 255, 0)),
+
+  logo-second-layer: (linear-gradient(to top, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), $btn_color),
+
+  
+  );
+  
+  $main-buttons-background-list: (
+    (
+      linear-gradient(to top right,rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), 
+      linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+      url('/assets/noise.svg')    
+    ),
+
+    (
+      linear-gradient(to top right,rgba(235, 145, 43, 0.048), rgba(255, 255, 255, 0)), 
+      linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+      url('/assets/noise.svg')    
+    ),
+
+    (
+      linear-gradient(to top right,rgba(235, 145, 43, 0.025), rgba(255, 255, 255, 0)), 
+      linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+      url('/assets/noise.svg')    
+    ),  
+
+    (
+      linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+      url('/assets/noise.svg')    
+    ), 
+
+);
+
+
+$shadows-map: (
+  logo-forward-layer: (7px 0px 0px 0px rgb(24, 24, 24),
+  inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555)),
+
+  logo-second-layer: (7px 0px 0px 0px rgb(24, 24, 24),
+  inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555)),
+
+  main-btn: (7px 0px 0px 0px rgb(24, 24, 24),
+  inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356)),
+
+);
+
+$text-shadows-map: (
+  main-btn: (-1px -1px #000, 0 -1px 0 #757575),
+);
+
+
+@mixin centered-object($width) {
+  position: absolute;
+  left: 50%;
+  margin-left: -($width / 2);
+}
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  background: map-get($backgrounds-map, 'background-color');
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: $header_height; // 60px
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    background-color: $btn_color;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+     
+    .leftSideMenu{
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 0.2rem;
+      height: $header_height;
+      
+      
+      .pre-logo-section{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+        .pre-logo-shadow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 120%;
+          height: 100%; 
+          background: linear-gradient(to top left,rgba(235, 145, 43, 0.11) 20%, rgba(255, 255, 255, 0) 50%), 
+          linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+          url('/assets/noise.svg');
+        }
+        .pre-logo-buttons {
+          display: flex;
+          justify-content: left;
+
+  
+          .pre-logo-btn{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgb(144, 147, 151);
+            background: transparent;
+            height: 40px;
+            padding: 0px 15px;
+            border-radius: 0;
+            border: 0;
+            margin: 0;
+            cursor: pointer;
+            
+            &:nth-child(n+2){
+              border-left: 2px solid rgba(86, 75, 64, 0.9);
+            }
+  
+            &:not(:last-child){
+              border-right: 2px solid rgb(3, 20, 29);
+            }
+  
+            .icon {
+              width: 32px;
+              height: 32px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+  
+            }
+          }
+        }
+  
+      }
+      
+      .logo-section {
+        $logo-section-width: 12.5rem; //200px
+
+        position: relative;
+        width: $logo-section-width;
+        height: 60px;
+  
+        .logo-section--image {
+          $logo-section-image-width: 58px;
+
+          @include centered-object($logo-section-image-width);
+          top: 0.5rem;
+          z-index: 4;
+        }
+  
+        .logo-section--forward-layer{
+          $logo-section-forward-layer-width: 10rem; //160px
+
+          @include centered-object($logo-section-forward-layer-width);
+          z-index: 3;
+          width: $logo-section-forward-layer-width;
+          height: 80px;
+          background-color: #191d24;
+          box-shadow: map-get($shadows-map, 'logo-forward-layer');
+          transform: perspective(10px) rotateX(-0.6deg);
+          overflow: hidden;
+  
+          .logo_shadow {
+            position: absolute;
+            top: 0;
+            z-index: 10;
+            width: $logo-section-width;
+            height: 80px;
+            display: block;
+            background: map-get($backgrounds-map, 'logo-background')
+          }        
+        }
+  
+        .logo-section--second-layer{
+          position: absolute;
+          z-index: 2;
+          height: 70px;
+          width: $logo-section-width;
+          background: map-get($backgrounds-map, 'logo-second-layer');
+          box-shadow: map-get($shadows-map, 'logo-second-layer');
+          transform: perspective(10px) rotateX(-1.8deg);          
+        }
+      }
+  
+      .main-buttons-section{
+
+        @import "main-button";
+      }
+  
+    }
+  
+    .rightSideMenu {
+      .test-btn{
+        background: transparent;
+        border-radius: 0;
+        border: 0;        
+      }    
+    }
+  }
+}
+
+main {
+  min-height: 50rem;
+
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    // height: 80vh;
+    margin-top: 3rem;
+    box-sizing: border-box;
+  
+    .heroes-columns{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  
+      
+      .heroes-column {
+  
+        .heroes-pack {
+  
+          h2 {
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            color: #fff;
+          }
+  
+          .heroes-select{
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+  
+            .heroes-item {
+              width: 60px;
+              height: 100px;
+              cursor: pointer;
+              position: relative;
+              overflow: hidden;
+              transition: transform .3s cubic-bezier(.23,1,.32,1);   
+  
+              & img {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -43px;
+              }
+  
+                &:hover{
+                  transform: scale(1.3);
+                  z-index: 2;
+                }
+            }
+          }
+        }
+  
+  
+      }
+    
+    }
+  
+  }
+
+}
+
+footer {
+  min-height: 6.25rem;
+}

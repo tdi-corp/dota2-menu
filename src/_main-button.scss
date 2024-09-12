@@ -1,0 +1,52 @@
+.main-btn {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(144, 147, 151);
+    height: $header_height;
+    padding: 0px 50px;
+    transform: skew(-15deg);
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    box-shadow: map-get($shadows-map, 'main-btn');
+    cursor: pointer;   
+
+    @for $i from 1 through length($main-buttons-background-list){
+        &:nth-child(#{$i}){
+            background: nth($main-buttons-background-list, $i);
+        }       
+    }
+
+    .text {
+        transform: skew(15deg);
+        text-shadow: map-get($text-shadows-map, 'main-btn');
+        text-transform: uppercase;
+        transition: 1s;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        opacity: 0;
+        transition: 1s;
+        
+    }
+    
+    &.active {
+        color:rgb(170, 205, 241);
+
+        &::before{
+            opacity: 1;
+            background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);    
+        }
+    }
+
+    &:hover {
+        @extend .active;
+    }
+}
