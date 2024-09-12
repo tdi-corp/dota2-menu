@@ -79,7 +79,7 @@ header .header .leftSideMenu .logo-section {
 header .header .leftSideMenu .logo-section .logo-section--image {
   position: absolute;
   left: 50%;
-  margin-left: -29px;
+  margin-left: -2.125rem;
   top: 0.5rem;
   z-index: 4;
 }

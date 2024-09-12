@@ -59,9 +59,11 @@ $text-shadows-map: (
 
 
 @mixin centered-object($width) {
+  $value: calc($width/2);
+
   position: absolute;
   left: 50%;
-  margin-left: -($width / 2);
+  margin-left: -$value;
 }
 
 @mixin button-m() {
@@ -146,7 +148,7 @@ header {
         height: 60px;
   
         .logo-section--image {
-          $logo-section-image-width: 58px;
+          $logo-section-image-width: 4.25rem; //58px
 
           @include centered-object($logo-section-image-width);
           top: 0.5rem;
