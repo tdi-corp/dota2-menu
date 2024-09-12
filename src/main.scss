@@ -227,7 +227,6 @@ main {
   .container {
     margin: 0 auto;
     max-width: 1200px;
-    // height: 80vh;
     margin-top: 3rem;
     box-sizing: border-box;
   
@@ -287,4 +286,36 @@ main {
 
 footer {
   min-height: 6.25rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  .chat {
+    display: flex;
+    justify-content: center;
+
+    .chat-input {
+      background: #000000;
+      height: 2rem;
+      width: 36rem
+    }
+  }
+
+  .start {
+
+    .start-button {
+      border-radius: 0;
+      border: 0;
+      cursor: pointer;
+      background: linear-gradient(to top, #3E6A51, #4D894D);
+      
+      .text {
+        padding: 0.6rem 4.5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+      }
+    }
+
+  }
 }
