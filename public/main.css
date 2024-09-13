@@ -205,6 +205,9 @@ header .header .rightSideMenu .right-btn .icon {
   align-items: center;
   transform: skew(15deg);
 }
+header .header .rightSideMenu .last-item {
+  width: 0.5rem;
+}
 
 main {
   min-height: 50rem;
