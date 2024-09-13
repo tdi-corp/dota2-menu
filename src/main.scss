@@ -82,7 +82,7 @@ $text-shadows-map: (
 
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
@@ -146,9 +146,12 @@ header {
         height: 3.75rem; //60px
   
         .logo-section--image {
-          $logo-section-image-width: 3.625rem; //58px
+          $logo-section-image-size: 3.625rem; //58px
 
-          @include centered-object($logo-section-image-width);
+          width: $logo-section-image-size;
+          height: $logo-section-image-size;
+
+          @include centered-object($logo-section-image-size);
           top: 0.5rem;
           z-index: 4;
         }
