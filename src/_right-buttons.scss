@@ -1,7 +1,7 @@
 .gold-info {
   display: flex;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 1.5rem; //24px
 
   .icon {
     @include button-icon();
@@ -22,7 +22,7 @@
     box-shadow: map-get($shadows-map, 'main-btn');
     height: $header_height;
     transform: skew(-15deg);
-    padding: 0px 20px;
+    padding: 0 1.25rem; //20px
 
     .icon {
       @include button-icon();

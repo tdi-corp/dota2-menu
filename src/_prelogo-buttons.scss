@@ -1,8 +1,8 @@
 .pre-logo-btn{
     @include button-m();    
     background: transparent;
-    height: 40px;    
-    padding: 0px 15px;
+    height: 2.5rem;    
+    padding: 0 1rem; //16px
     display: flex;
     align-items: center;
     

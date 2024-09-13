@@ -53,8 +53,8 @@ header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn {
   border: 0;
   margin: 0;
   background: transparent;
-  height: 40px;
-  padding: 0px 15px;
+  height: 2.5rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
 }
@@ -65,8 +65,8 @@ header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn:n
   border-right: 2px solid rgb(3, 20, 29);
 }
 header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn .icon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn .
 header .header .leftSideMenu .logo-section {
   position: relative;
   width: 12.5rem;
-  height: 60px;
+  height: 3.75rem;
 }
 header .header .leftSideMenu .logo-section .logo-section--image {
   position: absolute;
@@ -89,7 +89,7 @@ header .header .leftSideMenu .logo-section .logo-section--forward-layer {
   margin-left: -5rem;
   z-index: 3;
   width: 10rem;
-  height: 80px;
+  height: 5rem;
   background-color: #191d24;
   box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555);
   transform: perspective(10px) rotateX(-0.6deg);
@@ -100,14 +100,14 @@ header .header .leftSideMenu .logo-section .logo-section--forward-layer .logo_sh
   top: 0;
   z-index: 10;
   width: 12.5rem;
-  height: 80px;
+  height: 5rem;
   display: block;
   background: linear-gradient(to top, rgba(235, 145, 43, 0.164), rgba(255, 255, 255, 0));
 }
 header .header .leftSideMenu .logo-section .logo-section--second-layer {
   position: absolute;
   z-index: 2;
-  height: 70px;
+  height: 4.375rem;
   width: 12.5rem;
   background: linear-gradient(to top, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), #1c2028;
   box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555);
@@ -125,7 +125,7 @@ header .header .leftSideMenu .main-buttons-section .main-btn {
   box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
   height: 3.75rem;
   transform: skew(-15deg);
-  padding: 0px 50px;
+  padding: 0 3.125rem;
 }
 header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(1) {
   background: linear-gradient(to top right, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
@@ -170,11 +170,11 @@ header .header .rightSideMenu {
 header .header .rightSideMenu .gold-info {
   display: flex;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 1.5rem;
 }
 header .header .rightSideMenu .gold-info .icon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,11 +195,11 @@ header .header .rightSideMenu .right-btn {
   box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
   height: 3.75rem;
   transform: skew(-15deg);
-  padding: 0px 20px;
+  padding: 0 1.25rem;
 }
 header .header .rightSideMenu .right-btn .icon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,11 +210,11 @@ header .header .rightSideMenu .last-item {
 }
 
 main {
-  min-height: 35rem;
+  min-height: calc(80vh - 6.25rem);
 }
 main .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 75rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
   box-sizing: border-box;
@@ -237,19 +237,19 @@ main .container .heroes-columns .heroes-column .heroes-pack .heroes-select {
   gap: 0.5rem;
 }
 main .container .heroes-columns .heroes-column .heroes-pack .heroes-select .heroes-item {
-  width: 60px;
-  height: 100px;
+  width: 3.75rem;
+  height: 6.25rem;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 main .container .heroes-columns .heroes-column .heroes-pack .heroes-select .heroes-item img {
-  height: 100%;
   position: absolute;
-  top: 0;
   left: 50%;
-  margin-left: -43px;
+  margin-left: -2.6875rem;
+  top: 0;
+  height: 100%;
 }
 main .container .heroes-columns .heroes-column .heroes-pack .heroes-select .heroes-item:hover {
   transform: scale(1.3);

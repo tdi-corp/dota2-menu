@@ -6,7 +6,7 @@
     box-shadow: map-get($shadows-map, 'main-btn');
     height: $header_height;
     transform: skew(-15deg);
-    padding: 0px 50px;
+    padding: 0 3.125rem; //50px
     
     @for $i from 1 through length($main-buttons-background-list){
         &:nth-child(#{$i}){
