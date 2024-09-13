@@ -210,17 +210,20 @@ header .header .rightSideMenu .last-item {
 }
 
 main {
-  min-height: 50rem;
+  min-height: 35rem;
 }
 main .container {
   margin: 0 auto;
   max-width: 1200px;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   box-sizing: border-box;
 }
 main .container .heroes-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: 35rem;
+  overflow-y: scroll;
 }
 main .container .heroes-columns .heroes-column .heroes-pack h2 {
   text-transform: uppercase;
@@ -261,17 +264,25 @@ footer {
 footer .chat {
   display: flex;
   justify-content: center;
+  align-items: end;
 }
 footer .chat .chat-input {
   background: #000000;
   height: 2rem;
   width: 36rem;
+  margin: 2rem 0;
+}
+footer .start {
+  display: flex;
+  justify-content: left;
+  align-items: end;
 }
 footer .start .start-button {
   border-radius: 0;
   border: 0;
   cursor: pointer;
   background: linear-gradient(to top, #3E6A51, #4D894D);
+  margin: 2rem 0;
 }
 footer .start .start-button .text {
   padding: 0.6rem 4.5rem;
