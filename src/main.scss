@@ -80,10 +80,32 @@ $text-shadows-map: (
   align-items: center;  
 }
 
-
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
+
+@media screen and (max-width: 1800px) {
+  html {
+    font-size: 14px;
+  }
+    
+}
+
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 12px;
+  }
+    
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+    
+}
+
 
 body {
   font-size: 1rem;
@@ -219,8 +241,8 @@ main {
     .heroes-columns{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      height: 35rem;
-      overflow-y: scroll;  
+      // height: 35rem;
+      // overflow-y: scroll;  
       
       .heroes-column {
   

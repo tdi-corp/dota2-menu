@@ -1,7 +1,22 @@
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
+@media screen and (max-width: 1800px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
 body {
   font-size: 1rem;
   background: linear-gradient(#0b1113, #2b3740, #10161d);
@@ -224,8 +239,6 @@ main .container {
 main .container .heroes-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 35rem;
-  overflow-y: scroll;
 }
 main .container .heroes-columns .heroes-column .heroes-pack h2 {
   text-transform: uppercase;
