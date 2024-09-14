@@ -124,6 +124,10 @@ header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn .
   justify-content: center;
   align-items: center;
 }
+header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn .icon img {
+  width: 2rem;
+  height: 2rem;
+}
 header .header .leftSideMenu .logo-section {
   position: relative;
   width: 12.5rem;
@@ -234,6 +238,10 @@ header .header .rightSideMenu .gold-info .icon {
   justify-content: center;
   align-items: center;
 }
+header .header .rightSideMenu .gold-info .icon img {
+  width: 2rem;
+  height: 2rem;
+}
 header .header .rightSideMenu .gold-info .gold-currency {
   text-transform: uppercase;
   font-size: 1rem;
@@ -259,6 +267,10 @@ header .header .rightSideMenu .right-btn .icon {
   justify-content: center;
   align-items: center;
   transform: skew(15deg);
+}
+header .header .rightSideMenu .right-btn .icon img {
+  width: 2rem;
+  height: 2rem;
 }
 header .header .rightSideMenu .last-item {
   width: 0.5rem;
