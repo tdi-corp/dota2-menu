@@ -25,6 +25,10 @@ body {
   margin: 0;
 }
 
+.body-height {
+  min-height: calc(100vh - 7rem);
+}
+
 header {
   height: 3.75rem;
 }
@@ -226,9 +230,6 @@ header .header .rightSideMenu .last-item {
   width: 0.5rem;
 }
 
-main {
-  min-height: calc(80vh - 6.25rem);
-}
 main .container {
   margin: 0 auto;
   max-width: 75rem;
