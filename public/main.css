@@ -112,10 +112,10 @@ header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn {
   align-items: center;
 }
 header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn:nth-child(n+2) {
-  border-left: 2px solid rgba(86, 75, 64, 0.9);
+  border-left: 0.125rem solid rgba(86, 75, 64, 0.9);
 }
 header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn:not(:last-child) {
-  border-right: 2px solid rgb(3, 20, 29);
+  border-right: 0.125rem solid rgb(3, 20, 29);
 }
 header .header .leftSideMenu .pre-logo-section .pre-logo-buttons .pre-logo-btn .icon {
   width: 2rem;
@@ -150,7 +150,7 @@ header .header .leftSideMenu .logo-section .logo-section--forward-layer {
   width: 10rem;
   height: 5rem;
   background-color: #191d24;
-  box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555);
+  box-shadow: 0.44rem 0 0 0 rgb(24, 24, 24), inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555);
   transform: perspective(10px) rotateX(-0.6deg);
   overflow: hidden;
 }
@@ -169,7 +169,7 @@ header .header .leftSideMenu .logo-section .logo-section--second-layer {
   height: 4.375rem;
   width: 12.5rem;
   background: linear-gradient(to top, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), #1c2028;
-  box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555);
+  box-shadow: 0.44rem 0 0 0 rgb(24, 24, 24), inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555);
   transform: perspective(10px) rotateX(-1.8deg);
 }
 header .header .leftSideMenu .main-buttons-section .main-btn {
@@ -180,7 +180,7 @@ header .header .leftSideMenu .main-buttons-section .main-btn {
   margin: 0;
   font-size: 1rem;
   color: rgb(144, 147, 151);
-  box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
+  box-shadow: 0.44rem 0 0 0 rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
   height: 3.75rem;
   transform: skew(-15deg);
   padding: 0 3.125rem;
@@ -200,7 +200,7 @@ header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(4) {
 header .header .leftSideMenu .main-buttons-section .main-btn .text {
   font-weight: 700;
   transform: skew(15deg);
-  text-shadow: -1px -1px #000, 0 -1px 0 #757575;
+  text-shadow: -0.0625rem -0.0625rem #000, 0 -0.0625rem 0 #757575;
   text-transform: uppercase;
   transition: 1s;
 }
@@ -255,7 +255,7 @@ header .header .rightSideMenu .right-btn {
   border: 0;
   margin: 0;
   background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
-  box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
+  box-shadow: 0.44rem 0 0 0 rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
   height: 3.75rem;
   transform: skew(-15deg);
   padding: 0 1.25rem;

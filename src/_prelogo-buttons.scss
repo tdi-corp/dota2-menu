@@ -7,11 +7,11 @@
     align-items: center;
     
     &:nth-child(n+2){
-      border-left: 2px solid rgba(86, 75, 64, 0.9);
+      border-left: 0.125rem solid rgba(86, 75, 64, 0.9);
     }
 
     &:not(:last-child){
-      border-right: 2px solid rgb(3, 20, 29);
+      border-right: 0.125rem solid rgb(3, 20, 29);
     }
 
     .icon {
