@@ -17,6 +17,36 @@ html {
     font-size: 10px;
   }
 }
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 770px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 670px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media screen and (max-width: 570px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 4px;
+  }
+}
 * {
   font-family: "Lato", sans-serif;
 }
