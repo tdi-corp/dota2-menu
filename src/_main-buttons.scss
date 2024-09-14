@@ -1,7 +1,6 @@
 .main-btn {
     @include button-m(); 
     font-size: 1rem;
-    font-weight: 500;
     color: rgb(144, 147, 151);    
     box-shadow: map-get($shadows-map, 'main-btn');
     height: $header_height;
@@ -15,7 +14,7 @@
     }
 
     .text {
-        font-weight: bold;
+        font-weight: 700;
         transform: skew(15deg);
         text-shadow: map-get($text-shadows-map, 'main-btn');
         text-transform: uppercase;

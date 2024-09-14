@@ -145,7 +145,6 @@ header .header .leftSideMenu .main-buttons-section .main-btn {
   border: 0;
   margin: 0;
   font-size: 1rem;
-  font-weight: 500;
   color: rgb(144, 147, 151);
   box-shadow: 7px 0px 0px 0px rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
   height: 3.75rem;
@@ -165,7 +164,7 @@ header .header .leftSideMenu .main-buttons-section .main-btn:nth-child(4) {
   background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
 }
 header .header .leftSideMenu .main-buttons-section .main-btn .text {
-  font-weight: bold;
+  font-weight: 700;
   transform: skew(15deg);
   text-shadow: -1px -1px #000, 0 -1px 0 #757575;
   text-transform: uppercase;
@@ -250,8 +249,8 @@ main .container .heroes-columns {
 main .container .heroes-columns .heroes-column .heroes-pack h2 {
   text-transform: uppercase;
   font-size: 0.8rem;
-  font-weight: bolder;
-  color: #fff;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.8);
   margin: 0;
   margin-bottom: 0.5rem;
 }
