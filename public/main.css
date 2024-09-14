@@ -291,10 +291,25 @@ footer .chat {
   align-items: end;
 }
 footer .chat .chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #000000;
-  height: 2rem;
   width: 36rem;
   margin: 2rem 0;
+  padding: 0.5rem 0.3rem;
+}
+footer .chat .chat-input .left-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+footer .chat .chat-input .left-section .username-section {
+  color: #6593AA;
+}
+footer .chat .chat-input .left-section .message {
+  color: #737C7D;
+  margin-left: 0.5rem;
 }
 footer .start {
   display: flex;
