@@ -15,6 +15,7 @@
     }
 
     .text {
+        font-weight: bold;
         transform: skew(15deg);
         text-shadow: map-get($text-shadows-map, 'main-btn');
         text-transform: uppercase;
