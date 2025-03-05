@@ -37,8 +37,8 @@ const getHeroesPack = (iteration = 0, step = 20, max_parts = 5) => {
       const name = item.name.replace(/^npc_dota_hero_/,'');
       
       return `
-        <div class="heroes-item">
-          <img src="https://cdn.dota2.com/apps/dota2/images/heroes/${name}_vert.jpg" alt="">
+        <div class="pack__item">
+          <img class="pack__image" src="https://cdn.dota2.com/apps/dota2/images/heroes/${name}_vert.jpg" alt="">
         </div>`
   })
   .join('');
@@ -50,12 +50,12 @@ const getHeroesPack = (iteration = 0, step = 20, max_parts = 5) => {
 laneRoles.forEach((laneRole, i) => {
     
     heroes.innerHTML += `
-        <div class="heroes-column">
-          <div class="heroes-pack">
-            <h2>
+        <div class="heroes">
+          <div class="heroes__column">
+            <h2 class="heroes__title">
               ${laneRole}
             </h2>
-            <div class="heroes-select">
+            <div class="pack">
                ${getHeroesPack(i, 14)}
              </div>
           </div>   

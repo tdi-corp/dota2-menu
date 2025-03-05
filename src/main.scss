@@ -9,8 +9,7 @@ $backgrounds-map: (
 
   logo-second-layer: (linear-gradient(to top, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), $btn_color),
 
-  
-  );
+);
   
 $main-buttons-background-list: (
     (
@@ -58,7 +57,6 @@ $text-shadows-map: (
 
 @mixin centered-object($width) {
   $value: calc($width/2);
-
   position: absolute;
   left: 50%;
   margin-left: -$value;
@@ -169,245 +167,344 @@ body {
   min-height: calc(100vh - 7rem);
 }
 
-header {
+.header {
   height: $header_height; // 60px
-  
-  .header {
+  display: flex;
+  flex-direction: row;
+  background-color: $btn_color;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &__leftside {
     display: flex;
-    flex-direction: row;
-    background-color: $btn_color;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
-    position: relative;
-     
-    .leftSideMenu{
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      gap: 0.2rem;
-      height: $header_height;
-      
-      
-      .pre-logo-section{
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        
-        .pre-logo-shadow {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 120%;
-          height: 100%; 
-          background: linear-gradient(to top left,rgba(235, 145, 43, 0.11) 20%, rgba(255, 255, 255, 0) 50%), 
-          linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
-          url('/noise.svg');
-        }
-        .pre-logo-buttons {
-          display: flex;
-          justify-content: left;
-
-  
-          @import "prelogo-buttons";
-        }
-  
-      }
-      
-      .logo-section {
-        $logo-section-width: 12.5rem; //200px
-
-        position: relative;
-        width: $logo-section-width;
-        height: 3.75rem; //60px
-  
-        .logo-section--image {
-          $logo-section-image-size: 3.625rem; //58px
-
-          width: $logo-section-image-size;
-          height: $logo-section-image-size;
-
-          @include centered-object($logo-section-image-size);
-          top: 0.5rem;
-          z-index: 4;
-        }
-  
-        .logo-section--forward-layer{
-          $logo-section-forward-layer-width: 10rem; //160px
-
-          @include centered-object($logo-section-forward-layer-width);
-          z-index: 3;
-          width: $logo-section-forward-layer-width;
-          height: 5rem; //80px
-          background-color: #191d24;
-          box-shadow: map-get($shadows-map, 'logo-forward-layer');
-          transform: perspective(10px) rotateX(-0.6deg);
-          overflow: hidden;
-  
-          .logo_shadow {
-            position: absolute;
-            top: 0;
-            z-index: 10;
-            width: $logo-section-width;
-            height: 5rem;
-            display: block;
-            background: map-get($backgrounds-map, 'logo-background')
-          }        
-        }
-  
-        .logo-section--second-layer{
-          position: absolute;
-          z-index: 2;
-          height: 4.375rem; //70px
-          width: $logo-section-width;
-          background: map-get($backgrounds-map, 'logo-second-layer');
-          box-shadow: map-get($shadows-map, 'logo-second-layer');
-          transform: perspective(10px) rotateX(-1.8deg);          
-        }
-      }
-  
-      .main-buttons-section {
-        @import "main-buttons";
-      }
-  
-    }
-  
-    .rightSideMenu {
-      display: flex;
-      justify-content: end;
-      gap: 0.2rem;
-
-      @import "right-buttons";
-    }
+    gap: 0.2rem;
+    height: $header_height;
   }
 }
 
+.end-navigation {
+  display: flex;
+  justify-content: end;
+  gap: 0.2rem;
 
-main {
+  &__btn {
+    @include button-m(); 
+    background: nth($main-buttons-background-list, 4);
+    box-shadow: map-get($shadows-map, 'main-btn');
+    height: $header_height;
+    transform: skew(-15deg);
+    padding: 0 1.25rem; //20px
+  }
 
-  .container {
-    margin: 0 auto;
-    max-width: 75rem; //1200px
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    box-sizing: border-box;
-  
-    .heroes-columns{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      
-      .heroes-column {
-  
-        .heroes-pack {
-  
-          h2 {
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 800;
-            color: rgba(255, 255, 255, 0.8);
-            margin: 0;
-            margin-bottom: 0.5rem;
-          }
-  
-          .heroes-select{
-            display: flex;
-            justify-content: start;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-  
-            .heroes-item {
-              $heroes-width: 3.75rem; //60px
-              $heroes-width-real: 5.375rem;//86px
+  &__icon {
+    @include button-icon();
+    transform: skew(15deg);
+  }  
 
-              width: $heroes-width; //60px
-              height: 6.25rem; //100px
-              cursor: pointer;
-              position: relative;
-              overflow: hidden;
-              transition: transform .3s cubic-bezier(.23,1,.32,1);   
+  &__last-item {
+    width: 0.5rem;
+  }
+}
+
+.gold-info {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem; //24px
+
+  &__icon {
+    @include button-icon();
+  }
+
+  &__currency {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e3d585;
+  }
+
+}
+
+
+.prelogo-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
   
-              & img {
-                @include centered-object($heroes-width-real);
-                top: 0;
-                height: 100%;
-              }
-  
-                &:hover{
-                  transform: scale(1.3);
-                  z-index: 2;
-                }
-            }
-          }
-        }
-  
-  
-      }
+  &__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%; 
+    background: linear-gradient(to top left,rgba(235, 145, 43, 0.11) 20%, rgba(255, 255, 255, 0) 50%), 
+    linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+    url('/noise.svg');
+  }
+
+}
+
+.start-navigation {
+  display: flex;
+  justify-content: left;
+
+
+  &__btn{
+    @include button-m();    
+    background: transparent;
+    height: 2.5rem;    
+    padding: 0 1rem; //16px
+    display: flex;
+    align-items: center;
     
+    &:nth-child(n+2){
+      border-left: 0.125rem solid rgba(86, 75, 64, 0.9);
     }
-  
+
+    &:not(:last-child){
+      border-right: 0.125rem solid rgb(3, 20, 29);
+    }
+  }
+  &__icon {
+    @include button-icon();
+  }
+}
+
+.logo-section {
+  $logo-section-width: 12.5rem; //200px
+
+  position: relative;
+  width: $logo-section-width;
+  height: 3.75rem; //60px
+
+  &__image {
+    $logo-section-image-size: 3.625rem; //58px
+
+    width: $logo-section-image-size;
+    height: $logo-section-image-size;
+
+    @include centered-object($logo-section-image-size);
+    top: 0.5rem;
+    z-index: 4;
+  }
+
+  &__forward-layer{
+    $logo-section-forward-layer-width: 10rem; //160px
+
+    @include centered-object($logo-section-forward-layer-width);
+    z-index: 3;
+    width: $logo-section-forward-layer-width;
+    height: 5rem; //80px
+    background-color: #191d24;
+    box-shadow: map-get($shadows-map, 'logo-forward-layer');
+    transform: perspective(10px) rotateX(-0.6deg);
+    overflow: hidden;
+
+  }
+  &__shadow {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: $logo-section-width;
+    height: 5rem;
+    display: block;
+    background: map-get($backgrounds-map, 'logo-background')
+  }        
+
+  &__second-layer{
+    position: absolute;
+    z-index: 2;
+    height: 4.375rem; //70px
+    width: $logo-section-width;
+    background: map-get($backgrounds-map, 'logo-second-layer');
+    box-shadow: map-get($shadows-map, 'logo-second-layer');
+    transform: perspective(10px) rotateX(-1.8deg);          
+  }
+}
+
+.main-navigation {
+
+  &__btn {
+    @include button-m(); 
+    font-size: 1rem;
+    color: rgb(144, 147, 151);    
+    box-shadow: map-get($shadows-map, 'main-btn');
+    height: $header_height;
+    transform: skew(-15deg);
+    padding: 0 3.125rem; //50px
+    
+    @for $i from 1 through length($main-buttons-background-list){
+        &:nth-child(#{$i}){
+            background: nth($main-buttons-background-list, $i);
+        }       
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        opacity: 0;
+        transition: 1s;        
+    }
+    
+    &.active {
+        color:rgb(170, 205, 241);
+
+        &::before{
+            opacity: 1;
+            background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);    
+        }
+    }
+
+    &:hover {
+        @extend .active;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    transform: skew(15deg);
+    text-shadow: map-get($text-shadows-map, 'main-btn');
+    text-transform: uppercase;
+    transition: 1s;
   }
 
 }
 
-footer {
+
+
+
+
+.container {
+  margin: 0 auto;
+  max-width: 75rem; //1200px
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.heroes-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+  
+.heroes {
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+$heroes-width: 3.75rem; //60px
+$heroes-width-real: 5.375rem;//86px
+
+.pack{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  &__item {
+    width: $heroes-width; //60px
+    height: 6.25rem; //100px
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s cubic-bezier(.23,1,.32,1);   
+
+      &:hover{
+        transform: scale(1.3);
+        z-index: 2;
+      }
+  }
+
+  &__image{
+    @include centered-object($heroes-width-real);
+    top: 0;
+    height: 100%;
+  }  
+
+}
+
+
+
+
+
+.footer {
   min-height: 6.25rem; //100px
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 
-  .chat {
+  &__middle {
     display: flex;
     justify-content: center;
     align-items: end;
-
-    .chat-input {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #000000;
-      // height: 2rem;
-      width: 36rem;
-      margin: 2rem 0;
-      padding: 0.5rem 0.3rem;
-
-      .left-section {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-
-        .username-section {
-          color: #6593AA;
-        }
-
-        .message {
-          color: #737C7D;
-          margin-left: 0.5rem;
-        }
-      }
-
-    }
+  
   }
 
-  .start {
+  &__end {
     display: flex;
     justify-content: left;
     align-items: end;
+  }
+}
 
-    .start-button {
-      border-radius: 0;
-      border: 0;
-      cursor: pointer;
-      background: linear-gradient(to top, #3E6A51, #4D894D);
-      margin: 2rem 0;
-      
-      .text {
-        padding: 0.6rem 4.5rem;
-        text-transform: uppercase;
-        font-size: 1rem;
-        font-weight: bold;
-        color: white;
-      }
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  // height: 2rem;
+  width: 36rem;
+  margin: 2rem 0;
+  padding: 0.5rem 0.3rem;
+
+  .left-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    .username-section {
+      color: #6593AA;
     }
 
+    .message {
+      color: #737C7D;
+      margin-left: 0.5rem;
+    }
   }
+
+}
+.start {
+
+  &__button {
+    border-radius: 0;
+    border: 0;
+    cursor: pointer;
+    background: linear-gradient(to top, #3E6A51, #4D894D);
+    margin: 2rem 0;
+  }
+
+  &__text {
+    padding: 0.6rem 4.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+  }  
+
 }

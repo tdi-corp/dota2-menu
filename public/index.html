@@ -14,100 +14,98 @@
 </head>
 <body>
   <div class="body-height">
-    <header>
-      <div class="header overlay">
-        <div class="leftSideMenu">
-          <div class="pre-logo-section">
+    <header class="header">
+      
+        <div class="header__leftside">
+          <div class="prelogo-section">
             
-            <div class="pre-logo-shadow"></div>
+            <div class="prelogo-section__shadow"></div>
   
-            <div class="pre-logo-buttons">
-              <button class="pre-logo-btn">
-                <div class="icon">
+            <nav class="start-navigation">
+              <button class="start-navigation__btn">
+                <div class="start-navigation__icon">
                   <img src="/settingsDota2Icon.svg" alt="">
                 </div>
               </button>
-              <button class="pre-logo-btn">
-                <div class="icon">
+              <button class="start-navigation__btn">
+                <div class="start-navigation__icon">
                   <img src="/arrowLeftDota2Icon.svg" alt="">
                 </div>
-                <div class="icon">
+                <div class="start-navigation__icon">
                   <img src="/arrowRightDota2Icon.svg" alt="">
                 </div>
               </button>
-            </div>
+            </nav>
           </div>
           
   
           <div class="logo-section">
-            <img class="logo-section--image" src="/logo.png" alt="">
-            <div class="logo-section--forward-layer">
-              <div class="logo_shadow"></div>
+            <img class="logo-section__image" src="/logo.png" alt="">
+            <div class="logo-section__forward-layer">
+              <div class="logo-section__shadow"></div>
             </div>
-            <div class="logo-section--second-layer"></div>
+            <div class="logo-section__second-layer"></div>
           </div>
   
-          <div class="main-buttons-section">
-            <button type="button" class="main-btn">
-              <div class="text">Heroes</div>
+          <nav class="main-navigation">
+            <button type="button" class="main-navigation__btn">
+              <div class="main-navigation__text">Heroes</div>
             </button>
-            <button type="button" class="main-btn">
-              <div class="text">Watch</div>
+            <button type="button" class="main-navigation__btn">
+              <div class="main-navigation__text">Watch</div>
             </button>
-            <button type="button" class="main-btn">
-              <div class="text">Learn</div>
+            <button type="button" class="main-navigation__btn">
+              <div class="main-navigation__text">Learn</div>
             </button> 
-            <button type="button" class="main-btn active">
-              <div class="text">Custom Games</div>
+            <button type="button" class="main-navigation__btn active">
+              <div class="main-navigation__text">Custom Games</div>
             </button>                     
-          </div>
+          </nav>
         </div>
-        <div class="rightSideMenu">
-          <div class="gold-info">
-            <div class="icon">
-              <img src="/goldDota2Icon.svg" alt="">
+        <div class="header__rightside">
+          <nav class="end-navigation">
+            <div class="gold-info">
+              <div class="gold-info__icon">
+                <img src="/goldDota2Icon.svg" alt="">
+              </div>
+              <div class="gold-info__currency">
+                2700
+              </div>
             </div>
-            <div class="gold-currency">
-              2700
-            </div>
-          </div>
-          <button class="right-btn">
-            <div class="icon">
-              <img src="/shieldDota2Icon.svg" alt="">
-  
-            </div>
-            
-          </button>
-          <button class="right-btn">
-            <div class="icon">
-              <img src="/shieldDota2Icon.svg" alt="">
-  
-            </div>
-          </button>
-          <button class="right-btn">
-            <div class="icon">
-              <img src="/plusGoldDota2Icon.svg" alt="">
-  
-            </div>
-          </button>
-          <button class="right-btn">
-            <div class="icon">
-              <img src="/powerDota2Icon.svg" alt="">
-            </div>
-          </button>
-          <div class="last-item"></div>
+            <button class="end-navigation__btn">
+              <div class="end-navigation__icon">
+                <img src="/shieldDota2Icon.svg" alt="">
+              </div> 
+            </button>
+            <button class="end-navigation__btn">
+              <div class="end-navigation__icon">
+                <img src="/shieldDota2Icon.svg" alt=""> 
+              </div>
+            </button>
+            <button class="end-navigation__btn">
+              <div class="end-navigation__icon">
+                <img src="/plusGoldDota2Icon.svg" alt=""> 
+              </div>
+            </button>
+            <button class="end-navigation__btn">
+              <div class="end-navigation__icon">
+                <img src="/powerDota2Icon.svg" alt="">
+              </div>
+            </button>
+            <div class="end-navigation__last-item"></div>
+          </nav>
         </div>
-      </div>
+      
     </header>
     <main>
       <div class="container">
-        <div class="heroes-columns" id="heroes"></div>   
+        <div class="heroes-menu" id="heroes"></div>   
       </div>
     </main>
   </div>
-  <footer>
-    <div class="a"></div>
-    <div class="chat">
+  <footer class="footer">
+    <div class="footer__empty"></div>
+    <div class="footer__middle">
       <div class="chat-input">
         <div class="left-section">
           <div class="username-section">
@@ -121,9 +119,9 @@
 
       </div>
     </div>
-    <div class="start">
-      <button type="button" class="start-button">
-        <div class="text">play dota</div>
+    <div class="footer__end start">
+      <button type="button" class="start__button">
+        <div class="start__text">play dota</div>
       </button>
 
     </div>
