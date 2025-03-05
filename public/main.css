@@ -80,62 +80,6 @@ body {
   height: 3.75rem;
 }
 
-.end-navigation {
-  display: flex;
-  justify-content: end;
-  gap: 0.2rem;
-}
-.end-navigation__btn {
-  position: relative;
-  cursor: pointer;
-  border-radius: 0;
-  border: 0;
-  margin: 0;
-  background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
-  box-shadow: 0.44rem 0 0 0 rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
-  height: 3.75rem;
-  transform: skew(-15deg);
-  padding: 0 1.25rem;
-}
-.end-navigation__icon {
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: skew(15deg);
-}
-.end-navigation__icon img {
-  width: 2rem;
-  height: 2rem;
-}
-.end-navigation__last-item {
-  width: 0.5rem;
-}
-
-.gold-info {
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
-}
-.gold-info__icon {
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gold-info__icon img {
-  width: 2rem;
-  height: 2rem;
-}
-.gold-info__currency {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #e3d585;
-}
-
 .prelogo-section {
   position: relative;
   display: flex;
@@ -265,10 +209,17 @@ body {
   opacity: 0;
   transition: 1s;
 }
-.main-navigation__btn.active, .main-navigation__btn:hover {
+.main-navigation__btn:hover {
   color: rgb(170, 205, 241);
 }
-.main-navigation__btn.active::before, .main-navigation__btn:hover::before {
+.main-navigation__btn:hover::before {
+  opacity: 1;
+  background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);
+}
+.main-navigation__btn_active {
+  color: rgb(170, 205, 241);
+}
+.main-navigation__btn_active::before {
   opacity: 1;
   background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);
 }
@@ -278,6 +229,62 @@ body {
   text-shadow: -0.0625rem -0.0625rem #000, 0 -0.0625rem 0 #757575;
   text-transform: uppercase;
   transition: 1s;
+}
+
+.end-navigation {
+  display: flex;
+  justify-content: end;
+  gap: 0.2rem;
+}
+.end-navigation__btn {
+  position: relative;
+  cursor: pointer;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  background: linear-gradient(to top, rgba(28, 32, 40, 0.808), #1c2028), url("/noise.svg");
+  box-shadow: 0.44rem 0 0 0 rgb(24, 24, 24), inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356);
+  height: 3.75rem;
+  transform: skew(-15deg);
+  padding: 0 1.25rem;
+}
+.end-navigation__icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(15deg);
+}
+.end-navigation__icon img {
+  width: 2rem;
+  height: 2rem;
+}
+.end-navigation__last-item {
+  width: 0.5rem;
+}
+
+.gold-info {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.gold-info__icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gold-info__icon img {
+  width: 2rem;
+  height: 2rem;
+}
+.gold-info__currency {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e3d585;
 }
 
 .container {
