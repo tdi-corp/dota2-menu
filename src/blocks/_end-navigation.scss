@@ -1,0 +1,24 @@
+.end-navigation {
+    display: flex;
+    justify-content: end;
+    gap: 0.2rem;
+  
+    &__btn {
+      @include button-m(); 
+      background: nth($main-buttons-background-list, 4);
+      box-shadow: map-get($shadows-map, 'main-btn');
+      height: $header_height;
+      transform: skew(-15deg);
+      padding: 0 1.25rem; //20px
+    }
+  
+    &__icon {
+      transform: skew(15deg);
+      @include button-icon();
+    }  
+  
+    &__last-item {
+      width: 0.5rem;
+    }
+    
+}

@@ -1,0 +1,15 @@
+* {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    font-size: 1rem;
+    background: var(--background-color);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.body-height {
+    min-height: calc(100vh - 7rem);
+}

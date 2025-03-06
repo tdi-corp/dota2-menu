@@ -1,0 +1,17 @@
+.gold-info {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem; //24px
+  
+    &__icon {
+      @include button-icon();
+    }
+  
+    &__currency {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e3d585;
+    }
+  
+}

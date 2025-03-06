@@ -1,0 +1,25 @@
+.chat-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    width: 36rem;
+    margin: 2rem 0;
+    padding: 0.5rem 0.3rem;
+  
+    .left-section {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+  
+      .username-section {
+        color: #6593AA;
+      }
+  
+      .message {
+        color: #737C7D;
+        margin-left: 0.5rem;
+      }
+    }
+  
+}

@@ -1,0 +1,62 @@
+:root {
+  --background-color: linear-gradient(#0b1113, #2b3740, #10161d);
+}
+
+$btn_color: #1c2028;
+
+$header_height: 3.75rem; // 60px
+
+$backgrounds-map: (
+  // background-color: linear-gradient(#0b1113, #2b3740, #10161d),
+  
+  logo-background: linear-gradient(to top, rgba(235, 145, 43, 0.164), rgba(255, 255, 255, 0)),
+
+  logo-second-layer: (linear-gradient(to top, rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), $btn_color),
+
+);
+  
+$main-buttons-background-list: (
+    (
+      linear-gradient(to top right,rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), 
+      linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+      url('../images/noise.svg')    
+    ),
+
+    (
+      linear-gradient(to top right,rgba(235, 145, 43, 0.048), rgba(255, 255, 255, 0)), 
+      linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+      url('../images/noise.svg')    
+    ),
+
+    (
+      linear-gradient(to top right,rgba(235, 145, 43, 0.025), rgba(255, 255, 255, 0)), 
+      linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+      url('../images/noise.svg')    
+    ),  
+
+    (
+      linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
+      url('../images/noise.svg')    
+    ), 
+
+);
+
+
+$shadows-map: (
+  logo-forward-layer: (0.44rem 0 0 0 rgb(24, 24, 24),
+  inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555)),
+
+  logo-second-layer: (0.44rem 0 0 0 rgb(24, 24, 24),
+  inset 1px -2px 4px 0px rgba(144, 147, 151, 0.555)),
+
+  main-btn: (0.44rem 0 0 0 rgb(24, 24, 24),
+  inset 1px -1.8px 4px 0px rgba(144, 147, 151, 0.356)),
+
+);
+
+$text-shadows-map: (
+  main-btn: (-0.0625rem -0.0625rem #000, 0 -0.0625rem 0 #757575),
+);
+
+$heroes-width: 3.75rem; //60px
+$heroes-width-real: 5.375rem;//86px

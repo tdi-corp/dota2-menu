@@ -1,0 +1,58 @@
+.main-navigation {
+
+    &__btn {
+      @include button-m(); 
+      font-size: 1rem;
+      color: rgb(144, 147, 151);    
+      box-shadow: map-get($shadows-map, 'main-btn');
+      height: $header_height;
+      transform: skew(-15deg);
+      padding: 0 3.125rem; //50px
+      
+      @for $i from 1 through length($main-buttons-background-list){
+          &:nth-child(#{$i}){
+              background: nth($main-buttons-background-list, $i);
+          }       
+      }
+      
+      &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -5%;
+          width: 110%;
+          height: 110%;
+          opacity: 0;
+          transition: 1s;        
+      }
+      
+      &:hover {
+        color:rgb(170, 205, 241);
+  
+        &::before{
+            opacity: 1;
+            background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);    
+        }      
+      }
+    }
+  
+    &__btn {
+      &--active {
+        color:rgb(170, 205, 241);
+  
+        &::before{
+            opacity: 1;
+            background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);    
+        }
+      }
+    }
+  
+    &__text {
+      font-weight: 700;
+      transform: skew(15deg);
+      text-shadow: map-get($text-shadows-map, 'main-btn');
+      text-transform: uppercase;
+      transition: 1s;
+    }
+  
+}

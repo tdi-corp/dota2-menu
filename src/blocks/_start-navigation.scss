@@ -1,0 +1,25 @@
+.start-navigation {
+    display: flex;
+    justify-content: left;
+  
+  
+    &__btn{
+      @include button-m();    
+      background: transparent;
+      height: 2.5rem;    
+      padding: 0 1rem; //16px
+      display: flex;
+      align-items: center;
+      
+      &:nth-child(n+2){
+        border-left: 0.125rem solid rgba(86, 75, 64, 0.9);
+      }
+  
+      &:not(:last-child){
+        border-right: 0.125rem solid rgb(3, 20, 29);
+      }
+    }
+    &__icon {
+      @include button-icon();
+    }
+}

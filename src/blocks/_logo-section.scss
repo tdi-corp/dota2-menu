@@ -1,0 +1,51 @@
+.logo-section {
+    $logo-section-width: 12.5rem; //200px
+  
+    position: relative;
+    width: $logo-section-width;
+    height: 3.75rem; //60px
+  
+    &__image {
+      $logo-section-image-size: 3.625rem; //58px
+  
+      width: $logo-section-image-size;
+      height: $logo-section-image-size;
+  
+      @include centered-object($logo-section-image-size);
+      top: 0.5rem;
+      z-index: 4;
+    }
+  
+    &__forward-layer{
+      $logo-section-forward-layer-width: 10rem; //160px
+  
+      @include centered-object($logo-section-forward-layer-width);
+      z-index: 3;
+      width: $logo-section-forward-layer-width;
+      height: 5rem; //80px
+      background-color: #191d24;
+      box-shadow: map-get($shadows-map, 'logo-forward-layer');
+      transform: perspective(10px) rotateX(-0.6deg);
+      overflow: hidden;
+  
+    }
+    &__shadow {
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      width: $logo-section-width;
+      height: 5rem;
+      display: block;
+      background: map-get($backgrounds-map, 'logo-background')
+    }        
+  
+    &__second-layer{
+      position: absolute;
+      z-index: 2;
+      height: 4.375rem; //70px
+      width: $logo-section-width;
+      background: map-get($backgrounds-map, 'logo-second-layer');
+      box-shadow: map-get($shadows-map, 'logo-second-layer');
+      transform: perspective(10px) rotateX(-1.8deg);          
+    }
+}

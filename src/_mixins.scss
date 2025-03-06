@@ -1,0 +1,27 @@
+@mixin centered-object($width) {
+  $value: calc($width/2);
+  position: absolute;
+  left: 50%;
+  margin-left: -$value;
+}
+
+@mixin button-m() {
+  position: relative;
+  cursor: pointer;
+  border-radius: 0;
+  border: 0;
+  margin: 0;  
+}
+
+@mixin button-icon() {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    width: 2rem;
+    height: 2rem;    
+  }
+}
