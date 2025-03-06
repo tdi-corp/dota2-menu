@@ -15,24 +15,24 @@ $main-buttons-background-list: (
     (
       linear-gradient(to top right,rgba(235, 145, 43, 0.11), rgba(255, 255, 255, 0)), 
       linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
-      url('/noise.svg')    
+      url('../images/noise.svg')    
     ),
 
     (
       linear-gradient(to top right,rgba(235, 145, 43, 0.048), rgba(255, 255, 255, 0)), 
       linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
-      url('/noise.svg')    
+      url('../images/noise.svg')    
     ),
 
     (
       linear-gradient(to top right,rgba(235, 145, 43, 0.025), rgba(255, 255, 255, 0)), 
       linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
-      url('/noise.svg')    
+      url('../images/noise.svg')    
     ),  
 
     (
       linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
-      url('/noise.svg')    
+      url('../images/noise.svg')    
     ), 
 
 );
@@ -199,7 +199,7 @@ body {
     height: 100%; 
     background: linear-gradient(to top left,rgba(235, 145, 43, 0.11) 20%, rgba(255, 255, 255, 0) 50%), 
     linear-gradient(to top, rgba(28, 32, 40, 0.808), $btn_color),
-    url('/noise.svg');
+    url('../images/noise.svg');
   }
 
 }
@@ -310,18 +310,6 @@ body {
         transition: 1s;        
     }
     
-    // &.active {
-    //     color:rgb(170, 205, 241);
-
-    //     &::before{
-    //         opacity: 1;
-    //         background: radial-gradient(at 50% 20%, rgba(171, 205, 253, 0.26) 30%, rgba(159, 193, 243, 0) 70%);    
-    //     }
-    // }
-
-    // &:hover {
-    //     @extend .active;
-    // }
     &:hover {
       color:rgb(170, 205, 241);
 
@@ -333,7 +321,7 @@ body {
   }
 
   &__btn {
-    &_active {
+    &--active {
       color:rgb(170, 205, 241);
 
       &::before{

@@ -1,17 +1,17 @@
-import heroes_data from '/heroes.js'
+import heroes_data from './heroes.js'
 
-const heroes_list = document.querySelector('#heroes')
+// const heroes_list = document.querySelector('#heroes')
 
-const dd = [
-    "Initiator",
-    "Disabler",
-    "Escape",
-    "Nuker",
-    "Carry",
-    "Support",
-    "Pusher",
-    "Durable",
-];
+// const dd = [
+//     "Initiator",
+//     "Disabler",
+//     "Escape",
+//     "Nuker",
+//     "Carry",
+//     "Support",
+//     "Pusher",
+//     "Durable",
+// ];
 
 const laneRoles = [
     'safe lane',
